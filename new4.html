@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+    <link rel="stylesheet" type="text/css" href="./asserts/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./asserts/css/width.css">
+    <link rel="stylesheet" type="text/css" href="./asserts/css/keyframe-animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+</head>
+<body>
+<section id="sevenSection">
+    <div>
+        <div class="">
+            <img src="./asserts/images/images/wheel/bg.png" class="img-fluid wheel-bg">
+        </div>
+        <div class="">
+            <img src="./asserts/images/images/wheel/img-dapaser.png" class="img-fluid wheel-heading">
+        </div>
+        <div>
+            <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-dapaser.png" class="img-fluid wheel" usemap="#workmap">
+            <map name="workmap">
+            <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+                <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
+                    <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                        </map>
+                    </div>
+                    <a href="new.html" class="wheel-home">
+                        <img src="./asserts/images/images/wheel/home-icon.png" class="img-fluid wheel-heading w-6">
+                    </a>
+                </div>
+            </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="./asserts/js/wheel-animation.js" type="text/javascript" charset="utf-8" async defer></script>
+
+<script>
+function replaceSevenSection() {
+        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            console.log(element); // Check if the element is selected
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(360deg)'
+                });
+            }, 300);
+        });
+
+        var sevenSection = document.getElementById("sevenSection");
+        var eightSection = `
+                <section>
+                    <div>
+                        <div class="">
+                            <img src="./asserts/images/images/wheel/bg.png" class="img-fluid wheel-bg">
+                        </div>
+                        <div class="">
+                            <img src="./asserts/images/images/wheel/img-diamicron-xr-mx.png" class="img-fluid wheel-heading">
+                        </div>
+                        <div>
+                            <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-diamicron-xr-mx.png" class="img-fluid wheel" usemap="#workmap">
+                            <map name="workmap">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceNineSection()">
+                                <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+                            </map>
+                        </div>
+                    </div>
+                    <a href="new.html" class="wheel-home">
+                        <img src="./asserts/images/images/wheel/home-icon.png" class="img-fluid wheel-heading w-6">
+                    </a>
+                </section>
+            `;
+        sevenSection.innerHTML = eightSection;
+}
+
+function replaceEightSection() {
+
+    $(document).ready(function() {
+        var element = $('#rotatingElement');
+        console.log(element); // Check if the element is selected
+        setTimeout(function() {
+            element.css({
+                'transition': 'transform 0.5s ease-in-out',
+                'transform': 'rotate(360deg)'
+            });
+        }, 300);
+    });
+
+
+    var sevenSection = document.getElementById("sevenSection");
+    var nineSection = `
+                <section>
+                    <div>
+                        <div class="">
+                            <img src="./asserts/images/images/wheel/bg.png" class="img-fluid wheel-bg">
+                        </div>
+                        <a href="page6.html">
+                            <img src="./asserts/images/images/wheel/img-diamicron.png" class="img-fluid wheel-heading">
+                        </a>
+                        <div class="">
+                            <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-diamicron.png" class="img-fluid wheel" usemap="#workmap">
+                            <map name="workmap">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                                <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceNineSection()">
+                            </map>
+                        </div>
+                    </div>
+                    <a href="new.html" class="wheel-home">
+                        <img src="./asserts/images/images/wheel/home-icon.png" class="img-fluid wheel-heading w-6">
+                    </a>
+                </section>
+            `;
+    sevenSection.innerHTML = nineSection;
+}
+
+function replaceNineSection() {
+
+    $(document).ready(function() {
+        var element = $('#rotatingElement');
+        console.log(element); // Check if the element is selected
+        setTimeout(function() {
+            element.css({
+                'transition': 'transform 0.5s ease-in-out',
+                'transform': 'rotate(360deg)'
+            });
+        }, 300);
+    });
+
+
+    var sevenSection = document.getElementById("sevenSection");
+    var tenSection = `
+                <section>
+                    <div>
+                        <div class="">
+                            <img src="./asserts/images/images/wheel/bg.png" class="img-fluid wheel-bg">
+                        </div>
+                        <div class="">
+                            <img src="./asserts/images/images/wheel/img-dapaser.png" class="img-fluid wheel-heading">
+                        </div>
+                        <div>
+                            <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-dapaser.png" class="img-fluid wheel" usemap="#workmap">
+                            <map name="workmap">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+                                <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                            </map>
+                        </div>
+                    </div>
+                    <a href="new.html" class="wheel-home">
+                        <img src="./asserts/images/images/wheel/home-icon.png" class="img-fluid wheel-heading w-6">
+                    </a>
+                </section>
+            `;
+    sevenSection.innerHTML = tenSection;
+}
+</script>
+</body>
+</html>

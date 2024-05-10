@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+    <link rel="stylesheet" type="text/css" href="./asserts/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./asserts/css/width.css">
+    <link rel="stylesheet" type="text/css" href="./asserts/css/keyframe-animation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+   <section id="thirdSection">
+        <a  onclick="replaceThirdSection()">
+            <div class="display-img">
+                <img src="./asserts/images/images/diamicron-xr-mex/bg.png" class="img-fluid" usemap="#imageMap">
+
+                <map name="imageMap">
+                   <area shape="rect" coords="15,730,65,757" alt="diamicron xr mex" href="new.html">
+                    <area shape="rect" coords="60,730,180,757" alt="diamicron xr mex" href="new1.html">
+                    <area shape="rect" coords="200,730,320,757" alt="diamicron xr mex" href="new2.html">
+                    <area shape="rect" coords="350,730,470,757" alt="diamicron xr mex" href="new3.html">
+                    <area shape="rect" coords="485,730,557,757" alt="diamicron xr mex" href="page6.html">
+                    <area shape="rect" coords="565,730,650,757" alt="diamicron xr mex" href="page7.html">
+                    <area shape="rect" coords="655,730,730,757" alt="diamicron xr mex" href="page8.html">
+                    <area shape="rect" coords="735,730,810,757" alt="diamicron xr mex" href="page9.html">
+
+                </map>
+            </div>
+            <div class="page-logo">
+                <img src="./asserts/images/images/diamicron-xr-mex/diamicron-xr-mex.png" class="img-fluid w-50">
+            </div>
+        </a>
+    </section>
+
+    <!-- Your other content here -->
+
+    <script>
+        function replaceThirdSection() {
+            var thirdSection = document.getElementById("thirdSection");
+            var fourthSection = `
+             <section>
+        <a href="new3.html">
+            <div class="display-img">
+                <img src="./asserts/images/images/diamicron-xr-mex/bg.png" class="img-fluid" usemap="#imageMap">
+                <map name="imageMap">
+                      <area shape="rect" coords="15,730,65,757" alt="diamicron xr mex" href="new.html">
+                    <area shape="rect" coords="60,730,180,757" alt="diamicron xr mex" href="new1.html">
+                    <area shape="rect" coords="200,730,320,757" alt="diamicron xr mex" href="new2.html">
+                    <area shape="rect" coords="350,730,470,757" alt="diamicron xr mex" href="new3.html">
+                    <area shape="rect" coords="485,730,557,757" alt="diamicron xr mex" href="page6.html">
+                    <area shape="rect" coords="565,730,650,757" alt="diamicron xr mex" href="page7.html">
+                    <area shape="rect" coords="655,730,730,757" alt="diamicron xr mex" href="page8.html">
+                    <area shape="rect" coords="735,730,810,757" alt="diamicron xr mex" href="page9.html">
+
+                </map>
+            </div>
+            <div class="page-logo">
+                <div class="page-logo-heading">
+                    <img src="./asserts/images/images/diamicron-xr-mex/diamicron-xr-mex.png"  class="img-fluid w-50 animate__animated animate__heartBeat animate__delay-1s">
+                </div>
+                <div class="page-logo-subHeading ">
+                    <img src="./asserts/images/images/diamicron-xr-mex/belowdiamicron.png" class="img-fluid w-34 page-logo-subHeading-animation ">
+                </div>
+            </div>
+            <div>
+
+                <img class="page-side-bg img-fluid w-32 opacity-effect" src="./asserts/images/images/red-circle.png">
+
+                <img class="page-side-img page-side-img3-1 img-fluid w-37 animate__animated animate__fadeInLeftBig animate__delay-2s" src="./asserts/images/images/diamicron-xr-mex/lady.png" style="z-index: 1;">
+            </div>
+
+
+            <img class="doted-circle img-fluid w-35 doted-circle-animation" src="./asserts/images/images/dots.png">
+
+            <img class=" doted-circle-sub1 img-fluid w-24 animate__animated animate__fadeInRight animate__delay-3s" src="./asserts/images/images/diamicron-xr-mex/hbac.png">
+            <img class="doted-circle-sub2 img-fluid w-20 animate__animated animate__fadeInRight animate__delay-3s" src="./asserts/images/images/diamicron-xr-mex/fpg.png">
+            <img class="doted-circle-sub3 img-fluid w-20 animate__animated animate__fadeInRight animate__delay-3s" src="./asserts/images/images/diamicron-xr-mex/cvd.png">
+
+        </a>
+    </section>
+            `;
+            thirdSection.outerHTML = fourthSection;
+        }
+    </script>
+</body>
+</html>
