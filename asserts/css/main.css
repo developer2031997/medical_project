@@ -60,7 +60,7 @@ area {
     }
     /*page 1 css*/
 
-    /* page 2,2-1 , 3,3-2 & 4,4-1 css*/
+    /* page new1 , new2 & new3 css*/
     .display-img {
         position: relative;
     }
@@ -108,7 +108,10 @@ area {
                top: 75%;
         left: 47%;
     }
+.doted-circle-sub3-33{
+        left: 46%!important;
 
+}
 
     /*page 4*/
     .doted-circle-sub1-4-1 {
