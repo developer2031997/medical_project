@@ -15,9 +15,12 @@
         /* Add any additional styles here */
     </style>
     <script>
-        $(document).ready(function() {
-            // Code here if needed
-        });
+      $(window).on('load', function() {
+    var element = $('#zoomimage');
+    setTimeout(function() {
+        element.addClass('zoomed');
+    }, 0); 
+});
     </script>
 </head>
 
