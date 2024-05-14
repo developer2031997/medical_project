@@ -24,9 +24,10 @@
         <div>
             <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-dapaser.png" class="img-fluid wheel" usemap="#workmap">
             <map name="workmap">
-            <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+          <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" 
+          onclick="replaceEightSection('left')">
                 <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
-                    <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                    <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection('right')">
 
                     
                         </map>
@@ -41,17 +42,37 @@
  <script src="./asserts/js/wheel-animation.js" type="text/javascript" charset="utf-8" async defer></script>
 
 <script>
-function replaceSevenSection() {
-        $(document).ready(function() {
+function replaceSevenSection(direction) {
+  ( direction === 'left' )? (        $(document).ready(function() {
             var element = $('#rotatingElement');
-            console.log(element); // Check if the element is selected
+            // console.log(element); 
             setTimeout(function() {
                 element.css({
                     'transition': 'transform 0.5s ease-in-out',
                     'transform': 'rotate(360deg)'
                 });
             }, 300);
-        });
+        })) : (        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            // console.log(element); 
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(-360deg)'
+                });
+            }, 300);
+        }));
+
+        // $(document).ready(function() {
+        //     var element = $('#rotatingElement');
+        //     console.log(element); // Check if the element is selected
+        //     setTimeout(function() {
+        //         element.css({
+        //             'transition': 'transform 0.5s ease-in-out',
+        //             'transform': 'rotate(360deg)'
+        //         });
+        //     }, 300);
+        // });
 
         var sevenSection = document.getElementById("sevenSection");
         var eightSection = `
@@ -66,9 +87,9 @@ function replaceSevenSection() {
                         <div>
                             <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-diamicron-xr-mx.png" class="img-fluid wheel" usemap="#workmap">
                             <map name="workmap">
-                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceNineSection()">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceNineSection('left')">
                                 <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
-                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceEightSection('right')">
                             </map>
                         </div>
                     </div>
@@ -80,18 +101,38 @@ function replaceSevenSection() {
         sevenSection.innerHTML = eightSection;
 }
 
-function replaceEightSection() {
+function replaceEightSection(direction) {
 
-    $(document).ready(function() {
-        var element = $('#rotatingElement');
-        console.log(element); // Check if the element is selected
-        setTimeout(function() {
-            element.css({
-                'transition': 'transform 0.5s ease-in-out',
-                'transform': 'rotate(360deg)'
-            });
-        }, 300);
-    });
+  ( direction === 'left' )? (        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            // console.log(element); 
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(360deg)'
+                });
+            }, 300);
+        })) : (        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            // console.log(element); 
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(-360deg)'
+                });
+            }, 300);
+        }));
+
+    // $(document).ready(function() {
+    //     var element = $('#rotatingElement');
+    //     console.log(element); // Check if the element is selected
+    //     setTimeout(function() {
+    //         element.css({
+    //             'transition': 'transform 0.5s ease-in-out',
+    //             'transform': 'rotate(360deg)'
+    //         });
+    //     }, 300);
+    // });
 
 
     var sevenSection = document.getElementById("sevenSection");
@@ -107,9 +148,9 @@ function replaceEightSection() {
                         <div class="">
                             <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-diamicron.png" class="img-fluid wheel" usemap="#workmap">
                             <map name="workmap">
-                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceSevenSection('left')">
                                 <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
-                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceNineSection()">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceNineSection('right')">
                             </map>
                         </div>
                     </div>
@@ -121,18 +162,38 @@ function replaceEightSection() {
     sevenSection.innerHTML = nineSection;
 }
 
-function replaceNineSection() {
+function replaceNineSection(direction) {
 
-    $(document).ready(function() {
-        var element = $('#rotatingElement');
-        console.log(element); // Check if the element is selected
-        setTimeout(function() {
-            element.css({
-                'transition': 'transform 0.5s ease-in-out',
-                'transform': 'rotate(360deg)'
-            });
-        }, 300);
-    });
+      ( direction === 'left' )? (        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            // console.log(element); 
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(360deg)'
+                });
+            }, 300);
+        })) : (        $(document).ready(function() {
+            var element = $('#rotatingElement');
+            // console.log(element); 
+            setTimeout(function() {
+                element.css({
+                    'transition': 'transform 0.5s ease-in-out',
+                    'transform': 'rotate(-360deg)'
+                });
+            }, 300);
+        }));
+
+    // $(document).ready(function() {
+    //     var element = $('#rotatingElement');
+    //     console.log(element); // Check if the element is selected
+    //     setTimeout(function() {
+    //         element.css({
+    //             'transition': 'transform 0.5s ease-in-out',
+    //             'transform': 'rotate(360deg)'
+    //         });
+    //     }, 300);
+    // });
 
 
     var sevenSection = document.getElementById("sevenSection");
@@ -148,9 +209,9 @@ function replaceNineSection() {
                         <div>
                             <img id="rotatingElement" src="./asserts/images/images/wheel/wheel-dapaser.png" class="img-fluid wheel" usemap="#workmap">
                             <map name="workmap">
-                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceEightSection()">
+                                <area shape="rect" coords="370,360,220,200" alt="diamicron xr mex" onclick="replaceEightSection('left')">
                                 <area shape="rect" coords="550,150,250,200" alt="diamicron xr mex" onclick="return false;">
-                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection()">
+                                <area shape="rect" coords="800,360,250,200" alt="diamicron xr mex" onclick="replaceSevenSection('right')">
                             </map>
                         </div>
                     </div>
